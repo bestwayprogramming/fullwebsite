@@ -1,0 +1,11 @@
+state: enabled
+email: vivekdpatel257@gmail.com
+fullname: 'vivek dhavalbhai patel'
+title: admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$tMYcvxmfxgRX8VGUnBqF0.hmESVbt7Ldld65Ky.eCo8uTRsxDpnmO
