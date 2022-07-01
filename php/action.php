@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "7567702014";
+$password = "";
 $database="college_db";
 
 // Create connection
@@ -11,13 +11,19 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
-$id=$_POST['Id'];
-$name=$_POST['Name'];
-$sem=$_POST['Sem'];
-$mobile=$_POST['Phone-Number'];
+$id=$_POST['ID'];
+$rn=$_POST['ROLL_NO'];
+$studname=$_POST['STUD_NAME'];
+$email=$_POST['EMAIL_ID'];
+$mobile=$_POST['MOBILE_NUMBER'];
+$dept=$_POST['DEPARTMENT'];
+$sem=$_POST['SEMESTER'];
+$dob=$_POST['DATE_OF_BIRTH'];
+$ads=$_POST['ADDRESS'];
 
-$sql = "INSERT INTO tblstudent (Id, Name, Sem, Phone_Number)
-VALUES ('$id', '$name', $sem, $mobile)";
+
+$sql = "INSERT INTO tblstudent (`ID` ,`ROLL_NO` ,`STUD_NAME` ,`EMAIL_ID` ,`MOBILE_NUMBER` ,`DEPARYTMENT` ,`SEMESTER` ,`DATE_OF_BIRTH` ,`ADDRESS`)
+VALUES ('$id','$rn','$studname','$email','$mobile','$dept','$sem','$dob','$ads')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
