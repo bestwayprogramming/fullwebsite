@@ -15,30 +15,11 @@
 <body>
     <table>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+            <tr>
+                <?php 
+                while ($row = mysqli_fetch_array($result));
+                ?>
+            </tr>
     </table>
 </body>
 </html>
